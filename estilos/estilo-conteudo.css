@@ -79,7 +79,7 @@ main > div.bloco-texto {
 main > h1 {
     font-family: 'varela', sans-serif;
     font-weight: lighter;
-    font-size: 2.5em;
+    font-size: 2.0em;
     line-height: 2.5;
     color: var(--cor4);
 }
@@ -87,7 +87,7 @@ main > h1 {
 main > h2 {
     font-family: 'varela', sans-serif;
     font-weight: 200;
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 2.5;
     color: var(--cor4);
 }
