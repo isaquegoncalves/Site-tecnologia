@@ -13,6 +13,11 @@
     src: url('../fontes/IBMPlex/IBMPlexSans-Light.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../fontes/SourceSansPro/SourceSansPro-Regular.ttf') format('truetype');
+} 
+
 :root {
     --cor1: #FFFFFF;
     --cor2: #F2F2F2;
@@ -41,7 +46,6 @@ nav {
 
 nav#marca {
     display: flex;
-    
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -89,7 +93,7 @@ main {
 main h1 {
     font-family: 'varela', sans-serif;
     font-weight: lighter;
-    font-size: clamp(0.5em, 0.8em + 5vw, 3em);
+    font-size: clamp(0.8em, 0.8em + 5vw, 3em);
     line-height: 2.5;
     color: var(--cor4);
     margin-left: 15px;
@@ -98,7 +102,7 @@ main h1 {
 main h2 {
     font-family: 'varela', sans-serif;
     font-weight: 200;
-    font-size: clamp(1.7em, 0.5em + 2.5vw, 2.8em);
+    font-size: clamp(1.5em, 0.5em + 3.5vw, 2.8em);
     line-height: 2.5;
     color: var(--cor4);
     margin-left: 15px;
@@ -109,6 +113,17 @@ main h3 {
     color: var(--cor2);
     margin: 15px;
     display: inline-block;
+}
+
+h4 {
+    font-family: 'SourceSansPro';
+    color: var(--cor1);
+}
+
+main ul {
+    list-style-position: inside;
+    columns: 2;
+    text-align: center;
 }
 
 div.bloco-texto {
@@ -123,6 +138,131 @@ div.bloco-texto {
     text-align: justify;
     line-height: 1.7em;
 }
+
+section#secao-externa {
+    width: 90%;
+    margin: 40px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px 0px;
+    border-color: var(--cor5);
+}
+
+section > div {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    font-family: 'SourceSansPro';
+    display: flex;
+    padding: 15px 15px 15px 30px;
+    border-top-left-radius: 15px;
+}
+
+section > div > h4 {
+    font-size: clamp(0.5em, 1em + 3vw, 1.6em);
+    margin: auto auto auto 15px;
+}
+
+section > div > img {
+    width: 8.5%;
+    height: 8.5%;
+    max-width: 40px;
+    min-width: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 4ms;
+}
+
+section#secao-externa a:hover {
+    color: #0136c9;
+    font-size: 1.25em;
+}
+
+aside {
+    font-family: 'SourceSansPro', sans-serif;
+    background-color: var(--cor2);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+aside:hover {
+    background-color: #ffffff;
+}
+
+aside > img {
+    width: 15%;
+    height: 15%;
+    min-width: 100px;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+.titulo-aside {
+    margin: auto;
+    font-family: 'SourceSansPro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(0.8em, 0.6em + 2vw, 1.4em);
+}
+
+
+
+/*===Área de rodapé===*/
+footer {
+    background-color: #001645;
+    font-family: 'SourceSansPro';
+}
+
+footer > nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+section.secao-rodape {
+    padding: 30px;
+    margin: auto;
+    background-color: var(--cor5);
+}
+
+h4.titulo-rodape {
+    font-size: clamp(2em, 1.8em + 3vw, 2.8em);
+    font-weight: normal;
+    line-height: 2em;
+}
+
+footer ul {
+    columns: 1;
+    text-align: center;
+    list-style-type: none;
+    line-height: 2.4em;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 10px;
+}
+
+footer a {
+    color: var(--cor2);
+    transition-duration: 200ms;
+}
+
+footer a:hover {
+    font-size: 0.9em;
+    color: #d8d8d8;
+    text-decoration: underline;
+}
+
+
 
 /* ====SETOR IMGs===*/
 
@@ -160,6 +300,7 @@ img#menu {
     width: 13%;
     height: 13%;
     max-width: 55px;
+    min-width: 2px;
     margin-left: 3.5%;
     margin-top: auto;
     margin-bottom: auto;
@@ -172,10 +313,7 @@ img#menu:hover {
 
 /*====FIM IMGs===*/
 
-ul {
-    list-style-position: inside;
-    columns: 2;
-}
+
 
 /* Box do vídeo externo*/
 div#box-titulo {
