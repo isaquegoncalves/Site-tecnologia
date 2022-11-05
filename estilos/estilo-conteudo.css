@@ -265,6 +265,7 @@ div.fix-img {
 
 img.foto-cont {
     width: 100%;
+    max-width: 500px;
     height: 200px;
     margin: auto;
     display: block;
@@ -285,7 +286,7 @@ img#icone-video {
 
 img#globo{
     margin: auto 0px auto auto;
-    width: clamp(3.2em, 1em + 4vw, 5em);
+    width: clamp(3em, 1em + 4vw, 5em);
 }
 
 img#menu {
@@ -308,7 +309,7 @@ img#menu:hover {
 
 /* Box do vídeo externo*/
 div#box-titulo {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     padding: 7px;
     display: flex;
     margin-top: 20px;
@@ -322,7 +323,7 @@ div#box-titulo > h3 {
 }
 
 div#box-video {
-    background-color: var(--cor5);
+    background-color: var(--cor4);
     padding: 10px;
     padding-bottom: 56%;
     position: relative;
